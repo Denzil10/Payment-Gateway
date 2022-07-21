@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- frameworks -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    .navbar{
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5em;
+        background-color: rgb(168, 236, 194);
+    }
+
+    .navbar-brand{
+        font-size: 1.4em;
+        margin-left: 2em;
+    }
+
+    
+    .nav-item{
+        margin: 0 .4em;
+    }
+    
+    .spaced_item{
+        margin-left: 25em;
+    }
+
+    .container{
+        font-family: 'Lato', sans-serif;
+        display: flex;
+        width: 70em;
+        height: 20em;
+        margin: auto;
+        margin-top: 3.5em;
+        justify-content: center;        
+
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem 0;
+        height: 6em;
+    }
+
+    .quote{
+        font-size: 1.7em;        
+    }
+
+    .razorpay-payment-button.svelte-ohbfj8{
+        margin-top: 2.3em;
+        margin-bottom: 2em;
+        margin-left: 28em;
+    }
+    
+    .PaymentButton-text.svelte-ekc7fv.svelte-ekc7fv {
+        font-size: 1.2em !important;
+        transition: font-size .4s;
+    }
+
+    .PaymentButton-text.svelte-ekc7fv.svelte-ekc7fv:hover {
+        font-size: 1.5em !important;
+    }
+
+    .PaymentButton-securedBy.svelte-ekc7fv.svelte-ekc7fv {    
+        display: none !important ;       
+    }
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">SmileForYou</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link spaced_item active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">About</a>
+            <a class="nav-item nav-link" href="#">Initiatives</a>
+            <a class="nav-item nav-link" href="#">Volunteer</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+        <img src="bg.jpg" width="80%" height="100%" alt="">
+    </div>    
+    <!-- <div class="btn_container">
+    </div> -->
+        <form >
+            <div class="quote">
+                "Cannot control nature but you can help them start a new life" 
+            </div>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JvdazVYvuXa8Me" async> </script> 
+        </form>
+</body>
+</html>
